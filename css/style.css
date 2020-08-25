@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #FDFEFE;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    width: 100%;
+    overflow: hidden;
+    height: 100px;
+    /*background: #212F3D;
+    display: flex;*/
+    background-color: #EAECEE;
+    margin-bottom: 20px;
+    
+}
+
+.wrapper{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+header .logo-title{
+    /*display: flex;
+    line-height: 80px;*/
+    float: left;
+}
+
+header .logo-title img{
+    width: 150px;
+    height: 90px;
+    margin-top: 10px;
+    /*margin-left: 10px;*/
+    -webkit-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+}
+
+/*header .logo-title img:hover{
+    width: 180px;
+    height: 120px;
+    position: fixed;
+    cursor: pointer;
+}*/
+
+header nav{
+    float: right;
+    line-height: 100px;
+}
+
+header nav a{
+    display: inline-block;
+    color: #17202A;
+    text-decoration: none;
+    padding: 10px 5px;
+    line-height: normal;
+    font-size: 13px;
+    font-weight: bold;
+    -webkit-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+
+}
+
+header nav a:hover{
+    /*background: #17202A;*/
+    color: #784212 ;
+    font-size: 20px;
+}
+
+.header2{
+    position: fixed;
+    height: 80px;
+}
