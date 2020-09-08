@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -16,7 +18,7 @@ header{
     background: #212F3D;
     display: flex;
     background-color: #d5dbdb;*/
-    background: #283048;  
+    background: rgba(40, 48, 72, 0.3);  
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #e3e4e4, #50576e);  
     /* Chrome 10-25, Safari 5.1-6 */
@@ -101,10 +103,11 @@ header nav a:hover{
 }
 
 .header2 .logo-title img{
-    width: 110px;
-    height: 50px;
-    /*display: none;
-    background-image: url();*/
+    width: 90px;
+    height: 40px;
+    /*
+    display: none;
+    background-image: url(../img/logo2.png);*/
 }
 
 .header2 nav{
@@ -119,6 +122,24 @@ header nav a:hover{
     color: rgb(252, 207, 8);
     border-bottom: 2px solid #FCCF08;
     font-size: 16px;
+}
+
+/*----------------------------------------*/
+/*-----------Header Image-----------------*/
+/*----------------------------------------*/
+
+.contenido-header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/header3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenido-header .section-header-fondo {
+    width: 100%;
+    background: rgba(40, 48, 72, 0.938);
 }
 
 @media screen and (max-width: 950px){
