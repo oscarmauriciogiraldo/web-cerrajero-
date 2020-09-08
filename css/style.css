@@ -14,9 +14,17 @@ header{
     overflow: hidden;
     /*height: 100px;
     background: #212F3D;
-    display: flex;*/
-    background-color: #D5DBDB;
-    margin-bottom: 20px;
+    display: flex;
+    background-color: #d5dbdb;*/
+    background: #283048;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #e3e4e4, #50576e);  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #e3e4e4, #50576e); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    position: fixed;
+    box-shadow: grey;
     
 }
 
@@ -57,7 +65,7 @@ header nav{
 
 header nav a{
     display: inline-block;
-    color: #17202A;
+    color: #02121f;
     text-decoration: none;
     padding: 10px 5px;
     line-height: normal;
@@ -73,15 +81,18 @@ header nav a{
 
 header nav a:hover{
     /*background: #17202A;*/
-    color: #784212 ;
+    color: #FCCF08 ;
     font-size: 20px;
-    border-bottom: 2px solid #784212;
+    border-bottom: 2px solid #FCCF08;
 }
 
 .header2{
     position: fixed;
     height: 60px;
-    background-color: #212F3D;
+    /*background-color: #212F3D;*/
+    background: #283048;  
+    
+    
 }
 
 .header2 .logo-title{
@@ -92,11 +103,22 @@ header nav a:hover{
 .header2 .logo-title img{
     width: 110px;
     height: 50px;
-    /*display: none;*/
+    /*display: none;
+    background-image: url();*/
 }
 
 .header2 nav{
     line-height: 60px;
+}
+
+.header2 nav a{
+    color: white;
+}
+
+.header2 nav a:hover{
+    color: rgb(252, 207, 8);
+    border-bottom: 2px solid #FCCF08;
+    font-size: 16px;
 }
 
 @media screen and (max-width: 950px){
