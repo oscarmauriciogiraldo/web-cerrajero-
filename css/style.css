@@ -18,12 +18,10 @@ header{
     background: #212F3D;
     display: flex;
     background-color: #d5dbdb;*/
-    background: rgba(40, 48, 72, 0.3);  
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #e3e4e4, #50576e);  
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #e3e4e4, #50576e); 
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #616161;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #d5dbdb, #616161);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #d5dbdb, #616161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
     position: fixed;
     box-shadow: grey;
@@ -44,8 +42,8 @@ header .logo-title{
 }
 
 header .logo-title img{
-    width: 150px;
-    height: 90px;
+    width: 160px;
+    height: 100px;
     margin-top: 10px;
     /*margin-left: 10px;*/
     -webkit-transition: all 250ms ease-in-out;
@@ -62,10 +60,21 @@ header .logo-title img{
 
 header nav{
     float: right;
-    line-height: 100px;
+    /*
+    */line-height: 110px;
+    /*background: seashell;*/
+    
 }
 
-header nav a{
+header nav .links-menu {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    line-height: normal;
+    /*background: sienna;*/
+}
+
+
+header nav .links-menu a{
     display: inline-block;
     color: #02121f;
     text-decoration: none;
@@ -81,10 +90,10 @@ header nav a{
 
 }
 
-header nav a:hover{
+header nav .links-menu a:hover{
     /*background: #17202A;*/
     color: #FCCF08 ;
-    font-size: 20px;
+    font-size: 16px;
     border-bottom: 2px solid #FCCF08;
 }
 
@@ -99,7 +108,7 @@ header nav a:hover{
 
 .header2 .logo-title{
     line-height: 60px;
-    font-size: 30px;
+    /*font-size: 30px;*/
 }
 
 .header2 .logo-title img{
@@ -110,15 +119,15 @@ header nav a:hover{
     background-image: url(../img/logo2.png);*/
 }
 
-.header2 nav{
+.header2 nav {
     line-height: 60px;
 }
 
-.header2 nav a{
+.header2 nav .links-menu a{
     color: white;
 }
 
-.header2 nav a:hover{
+.header2 nav .links-menu a:hover{
     color: rgb(252, 207, 8);
     border-bottom: 2px solid #FCCF08;
     font-size: 16px;
@@ -137,9 +146,18 @@ header nav a:hover{
     background-attachment: fixed;
 }
 
-.contenido-header .section-header-fondo {
+.contenido-header .header-textos {
     width: 100%;
-    background: rgba(40, 48, 72, 0.938);
+    height: 100vh;
+    background: rgba(40, 48, 72, 0.6);
+}
+
+
+
+.image-cerrajeria {
+    object-fit: cover;
+    margin-top: 100px;
+    height: calc(70vh - 100px);
 }
 
 @media screen and (max-width: 950px){
